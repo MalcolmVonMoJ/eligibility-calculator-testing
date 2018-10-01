@@ -14,11 +14,11 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-		<form action="/form6a" method="post">
+		<form action="/finish" method="post">
 		
 {{ govukBackLink({
   text: "Back",
-  href: "#"
+  href: "question6b"
 }) }}
 		<div class="govuk-form-group">
 		  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
@@ -29,7 +29,7 @@
 			</legend>
 			<div class="govuk-radios" data-module="radios">
 			  <div class="govuk-radios__item">
-				<input class="govuk-radios__input" id="dependant-1" name="dependant" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+				<input class="govuk-radios__input" id="dependant-1" name="dependant" type="radio" value="yes" data-aria-controls="conditional-how-contacted-conditional-1">
 				<label class="govuk-label govuk-radios__label" for="dependant-1">
 				  Yes
 				</label>
@@ -51,13 +51,13 @@
 					  <label class="govuk-label" for="dependant-child">
 						Aged 15 and younger
 					  </label>
-					  <input class="govuk-input govuk-input--width-5" id="dependant-child" name="dependant-child" type="text">
+					  <input class="govuk-input govuk-input--width-5" id="dependant-child" name="dependant-child" type="number">
 					</div>
 					<div class="govuk-form-group">
 					  <label class="govuk-label" for="dependant-adult">
 						Aged 16 and older
 					  </label>
-					  <input class="govuk-input govuk-input--width-5" id="dependant-adult" name="dependant-adult" type="text">
+					  <input class="govuk-input govuk-input--width-5" id="dependant-adult" name="dependant-adult" type="number">
 					</div>
 				</div>
 
