@@ -1,0 +1,129 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+	<form action="/question3a" method="post">
+		<h1 class="govuk-heading-xl">What capital does the client and partner have?</h1>
+		<p class="govuk-body-l">Do not include:</p>
+		<ul class="govuk-list govuk-list--bullet">
+			<li>Subject matter of dispute - (exemption limited to £100,000 for certain levels of service) </li>
+			<li>Household furniture and effects (unless exceptional value)</li>
+			<li>Clothes, Tools of trade</li>
+		</ul>
+		<table class="govuk-table">
+		  <thead class="govuk-table__head">
+			<tr class="govuk-table__row">
+			  <th class="govuk-table__header" scope="col">Capital</th>
+			  <th class="govuk-table__header" scope="col">Amount for client</th>
+			  <th class="govuk-table__header" scope="col">Amount for partner</th>
+			</tr>
+		  </thead>
+		  <tbody class="govuk-table__body">
+			<tr class="govuk-table__row">
+				<div class="govuk-form-group">
+					<th class="govuk-table__header" scope="row">
+						<label class="govuk-label" for="width-4">
+							Equity in home above £100,000
+						</label>
+						<span id="national-insurance-number-hint" class="govuk-hint">
+							After allowing up to £100,000 for mortgage(s) outstanding
+						</span>
+					</th>
+					<td class="govuk-table__cell ">
+						<input class="govuk-input govuk-input--width-4" id="width-4" name="width-4" type="text" pattern = "[0-9]*">
+					</td>
+					<td class="govuk-table__cell ">
+						<input class="govuk-input govuk-input--width-4" id="width-4" name="width-4" type="text">
+					</td>
+				</div>
+			</tr>
+			<tr class="govuk-table__row">
+				<div class="govuk-form-group">
+					<th class="govuk-table__header" scope="row">
+						<label class="govuk-label" for="width-4">
+							Savings
+						</label>
+						<span id="national-insurance-number-hint" class="govuk-hint">
+							Bank, building society, <i>etc</i>
+						</span>
+					</th>
+					<td class="govuk-table__cell ">
+						<input class="govuk-input govuk-input--width-4" id="width-4" name="width-4" type="text">
+					</td>
+					<td class="govuk-table__cell ">
+						<input class="govuk-input govuk-input--width-4" id="width-4" name="width-4" type="text">
+					</td>
+				</div>
+			</tr>
+			<tr class="govuk-table__row">
+				<div class="govuk-form-group">
+					<th class="govuk-table__header" scope="row">
+						<label class="govuk-label" for="width-4">
+							Investments
+						</label>
+						<span id="national-insurance-number-hint" class="govuk-hint">
+							Including shares and insurance policies
+						</span>
+					</th>
+					<td class="govuk-table__cell ">
+						<input class="govuk-input govuk-input--width-4" id="width-4" name="width-4" type="text">
+					</td>
+					<td class="govuk-table__cell ">
+						<input class="govuk-input govuk-input--width-4" id="width-4" name="width-4" type="text">
+					</td>
+				</div>
+			</tr>
+			<tr class="govuk-table__row">
+				<div class="govuk-form-group">
+					<th class="govuk-table__header" scope="row">
+						<label class="govuk-label" for="width-4">
+							Valuable items
+						</label>
+						<span id="national-insurance-number-hint" class="govuk-hint">
+							For example, boat, caravan, jewellery
+						</span>
+					</th>
+					<td class="govuk-table__cell ">
+						<input class="govuk-input govuk-input--width-4" id="width-4" name="width-4" type="text">
+					</td>
+					<td class="govuk-table__cell ">
+						<input class="govuk-input govuk-input--width-4" id="width-4" name="width-4" type="text">
+					</td>
+				</div>
+			</tr>
+			<tr class="govuk-table__row">
+				<div class="govuk-form-group">
+					<th class="govuk-table__header" scope="row">
+						<label class="govuk-label" for="width-4">
+							Other capital
+						</label>
+						<span id="national-insurance-number-hint" class="govuk-hint">
+							Including money due to the client
+						</span>
+					</th>
+					<td class="govuk-table__cell ">
+						<input class="govuk-input govuk-input--width-4" id="width-4" name="width-4" type="text">
+					</td>
+					<td class="govuk-table__cell ">
+						<input class="govuk-input govuk-input--width-4" id="width-4" name="width-4" type="text">
+					</td>
+				</div>
+			</tr>
+		  </tbody>
+		</table>
+		<button type="submit" class="govuk-button">
+			Next
+		</button>
+	
+   	</form>
+    </div>
+</div>
+
+{% endblock %}
